@@ -1,3 +1,3 @@
-# Tutorial
+# Una web Simple 
 
- Tutorial, es una breve muestra de CSS y HMTL.
+ Una breve muestra de CSS y HMTL.
