@@ -148,7 +148,7 @@ a {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1280px;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 #principal #cabecera #logo {
   width: 20%;
@@ -159,6 +159,7 @@ a {
 #principal #cabecera h1 {
   width: 80%;
   font-size: 4rem;
+  letter-spacing: 2rem;
   text-align: center;
 }
 #principal #cabecera h1:hover {
@@ -167,11 +168,14 @@ a {
 #principal #cabecera #menu {
   width: 100%;
   height: 48px;
-  padding-top: 20px;
+  padding-top: 3rem;
 }
 #principal #cabecera #menu ul {
   display: flex;
   border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 #principal #cabecera #menu ul li {
   width: 20%;
@@ -182,7 +186,6 @@ a {
   font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
 }
 #principal #cabecera #menu ul li:nth-of-type(1) {
   background: #ff4c4c;
@@ -199,13 +202,18 @@ a {
 #principal #cabecera #menu ul li:nth-of-type(5) {
   background: #3aadfe;
 }
+#principal #cabecera #menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 #principal #cabecera #menu ul li a:hover {
   opacity: 0.5;
 }
 #contenido {
   width: 90%;
   max-width: 1280px;
-  margin: 3rem auto;
+  margin: 4rem auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -224,6 +232,16 @@ a {
   padding: 1rem 0 1rem 0;
   font-size: 2rem;
 }
+#contenido article figure {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+#contenido article figure img {
+  width: auto/9;
+  height: auto;
+  max-width: 200px;
+  padding-bottom: 1rem;
+}
 #contenido #menuv {
   width: 25%;
   height: auto;
@@ -236,7 +254,8 @@ a {
   flex-wrap: wrap;
 }
 #contenido #menuv li {
-  line-height: 1.3rem;
+  width: 100%;
+  line-height: 2rem;
 }
 #contenido #menuv li:hover {
   font-size: 1.1rem;
