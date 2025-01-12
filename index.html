@@ -4,84 +4,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="static/images/logotipo.svg">
 
-  <title>Simple</title>
-  <link rel="stylesheet" href="static/css/estil.css">
+  <title>Simple - Una breve muestra de CSS y HTML</title>
 
+  <link rel="stylesheet" href="static/css/layout.css">
 </head>
 <body>
   <main id="principal">
     <header id="cabecera">
-      <a href="" title="Logotipo" class="logo"><img src="static/images/logotipo.svg" alt="Logotipo" ></a>
+      <a href="/" title="Logotipo" class="logo">
+        <img src="static/images/logotipo.svg" alt="Logotipo">
+      </a>
 
-      <h1>Simple</h1>
-
+      <div id="titulos">
+        <h1>Simple</h1>
+        <h2>Una breve muestra de SCSS/CSS y HTML</h2>
+      </div>
+      
       <nav id="menu">
-        <ul>
+        <menu>
           <li><a href="#" title="menu 01">Menu 01</a></li>
           <li><a href="#" title="menu 02">Menu 02</a></li>
           <li><a href="#" title="menu 03">Menu 03</a></li>
           <li><a href="#" title="menu 04">Menu 04</a></li>
           <li><a href="#" title="menu 05">Menu 05</a></li>
-        </ul>
+        </menu>
       </nav>
     </header>
     
     <section id="contenido">
       <article>
-        <h2>H2</h2>
+        <header>
+          <h2>H2</h2>
+        </header>
 
-        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
+        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi <strong>ipicil moluptaqui</strong> impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis <strong>plignih illore</strong> plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
 
         <figure>
-          <img onload="lazy" src="static/images/logotipo.svg" alt="imagen" title="Logotiopo"/>
+          <img loading="lazy" src="/static/images/logotipo.svg" alt="imagen" />
           <figcaption>Imagén</figcaption>
         </figure>
 
-        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
+        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque <strong>plaudipicia ped molupta delecto</strong> taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis <strong>experis adignis</strong> et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
 
-        <h3>H3</h3>
+        <header>
+          <h3>H3</h3>
+        </header>
 
-        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
+        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es <strong>escipsum quo ipti</strong> voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih <strong>illuptae nis nus</strong> voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
 
-        <h4>H4</h4>
+        <header>
+          <h4>H4</h4>
+        </header>
 
-        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
+        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti <strong>beatemquodi ipicil</strong> moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, <strong>sincillore nos sumquam fuga</strong>. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
 
-        <h5>H5</h5>
+        <header>
+          <h5>H5</h5>
+        </header>
 
-        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
+        <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib <strong>ustrupt atessim vident</strong>, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, <strong>que voluptam adicia comnihi</strong> liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
 
-        <h6>H6</h6>
+        <header>
+          <h6>H6</h6>
+        </header>
 
         <p>Pudae seque re et et et quo vel errum quam estinum quas prem quo essum, volum serum invelit doluptatas unti beatemquodi ipicil moluptaqui impor aut lacid quisque sintem es escipsum quo ipit voluptat as voluptatur? Xernam quaecte sequid quia velignimpos enimeniae. Harum eum sum ut volum et, quam quiaspe reiundam fugia sere, sit est, aborehe nimaxim uscimaios as unt etur sant lam am fugia venihil <span title="laboratorio">laboriatibus</span> dolupta quiatum sim quo molorenis ut quas auda eseque plaudipicia ped molupta delecto taturi cum rerror sequae. Ut voluptatus et iliatib ustrupt atessim vident, sumque natur? Ficiusdae et ipsum natquid maiorer iandaniatur alicae coriae. Nequi dolor modicipid quam, <i>ommodicit</i> ea nis a por restium sitaerenis eos nonsed ut voluptatesed qui discipis por aut rendus, omnihit ium venis experis adignis et fugiam quam rerum estibustrum as maximet fuga. Bis veliquunt lit plitam, que voluptam adicia comnihi liciis et, sincillore nos sumquam fuga. Itam, sam hit, solendam, cores aut labo. Ut qui core enihita temqui dis plignih illore plandan dignitecab id etur, con conemqui volorro te volore labo. Fugiatus ut rehenih illuptae nis nus voles pa nem dolupit, officilitium el expliqui reria assi nobis aut dolupta tiamet quidunt ute volorum denimolorum etur aut evero od et delent.</p>
       </article>
 
       <aside id="menuv">
         <h3>Aside</h3>
-        <ul>
-          <li><a href="#" title="">Sub menu 01</a></li>
-          <li><a href="#" title="">Sub menu 02</a></li>
-          <li><a href="#" title="">Sub menu 03</a></li>
-          <li><a href="#" title="">Sub menu 04</a></li>
-          <li><a href="#" title="">Sub menu 05</a></li>
-          <li><a href="#" title="">Sub menu 06</a></li>
-          <li><a href="#" title="">Sub menu 07</a></li>
-          <li><a href="#" title="">Sub menu 08</a></li>
-          <li><a href="#" title="">Sub menu 09</a></li>
-          <li><a href="#" title="">Sub menu 10</a></li>
-        </ul>
+        <ol>
+          <li><a href="#" title="Sub menu 01">Sub menu 01</a></li>
+          <li><a href="#" title="Sub menu 02">Sub menu 02</a></li>
+          <li><a href="#" title="Sub menu 03">Sub menu 03</a></li>
+          <li><a href="#" title="Sub menu 04">Sub menu 04</a></li>
+          <li><a href="#" title="Sub menu 05">Sub menu 05</a></li>
+        </ol>
+
+        <details name="detalles">
+          <summary title="Detalles">Detalles</summary>
+          <section>
+            <ul>
+              <li><a href="#" title="Sub menu 06">Sub menu 06</a></li>
+              <li><a href="#" title="Sub menu 07">Sub menu 07</a></li>
+              <li><a href="#" title="Sub menu 08">Sub menu 08</a></li>
+              <li><a href="#" title="Sub menu 09">Sub menu 09</a></li>
+              <li><a href="#" title="Sub menu 10">Sub menu 10</a></li>
+            </ul>
+          </section>
+        </details>
+
+        <details name="detalles">
+          <summary title="Categorias">Categorias</summary>
+          <section>
+            <ul>
+              <li><a href="#" title="Sub menu 11">Sub menu 11</a></li>
+              <li><a href="#" title="Sub menu 12">Sub menu 12</a></li>
+              <li><a href="#" title="Sub menu 13">Sub menu 13</a></li>
+              <li><a href="#" title="Sub menu 14">Sub menu 14</a></li>
+              <li><a href="#" title="Sub menu 15">Sub menu 15</a></li>
+            </ul>
+          </section>
+        </details>
       </aside>
     </section>
 
     <footer id="pie">
-      <ul>
-        <li><a href="#" title="menu 01">About</a></li>
-        <li><a href="#" title="menu 02">Privacy & Legacy</a></li>
-        <li><a href="#" title="menu 03">Contact</a></li>
-      </ul>
+      <section>
+        <h3>Información</h3>
+        <ul>
+          <li><a href="#" title="Nosotrs">Nosotros</a></li>
+          <li><a href="#" title="Terminos y Condiciones">Terminos y Condiciones</a></li>
+          <li><a href="#" title="Contacto">Contacto</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Soporte</h3>
+        <ul>
+          <li><a href="#" title="Documentación">Documentación</a></li>
+          <li><a href="#" title="Blog">Blog</a></li>
+        </ul>
+      </section>
+
       <div class="derechos">
-        <p>Todos los Derechos Reservados 2022 - Edgar Cornejo</p>
+        <p>Todos los Derechos Reservados 2025 - Simple</p>
       </div>
     </footer>
   </main>

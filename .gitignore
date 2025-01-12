@@ -164,3 +164,6 @@ pip-log.txt
 
 #Prepros
 prepros.config
+
+#Visual Studio Code
+.vscode
