@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
 
 img, video, svg { height: auto; max-width: 100%; }
 
-@media (prefers-reduced-motion: reduce)  {
+/*@media (prefers-reduced-motion: reduce)  {
   *, *::before, *::after { 
     animation-duration: 0.01ms !important; 
     animation-iteration-count: 1 !important; 
@@ -17,7 +17,7 @@ img, video, svg { height: auto; max-width: 100%; }
     scroll-behavior: auto !important;
     transition: none;
   }
-}
+}*/
 
 /* Estilos de Viewport */
 @viewport {
@@ -32,5 +32,10 @@ html {
 
 /* Estilos de Selección */
 ::selection {
-  background-color: transparent;
+  background-color: $--Web-Yellow;
+}
+
+/* View Transition */
+@view-transition {
+  navigation: auto;
 }

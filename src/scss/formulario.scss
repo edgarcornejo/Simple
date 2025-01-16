@@ -1,0 +1,80 @@
+#formulario {
+  width: 100%;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: .4rem 1rem 1rem 1rem;
+    gap: 1rem;
+    border: solid 2px $--Web-Yellow;
+    background: $--Web-White;
+  }
+  legend {
+    padding: .4rem;
+    font-weight: 500;
+  }
+  input {
+    width: 100%;
+    padding: .5rem;
+    outline: solid 1px $--Web-Gray1;
+    border: none;
+    border-radius: 5%;
+    &:focus {
+      outline: solid 1px $--Web-Blue;
+    }
+  }
+  button {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 5%;
+    background: $--Web-Yellow;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background: $--Web-Blue;
+      color: $--Web-White;
+    }
+  }
+}
+
+#search {
+  width: 100%;
+  fieldset {
+    display: flex;
+    padding: .4rem 1rem 1rem 1rem;
+    border: solid 2px $--Web-Yellow;
+    background: $--Web-White;
+  }
+  legend {
+    padding: .4rem;
+    font-weight: 500;
+  }
+  input[type="search"] {
+    width: 100%;
+    padding: .4rem;
+    outline: solid 1px $--Web-Blue;
+    border: none;
+    border-radius: 5%;
+    background: none;
+    &:focus {
+      outline: solid 1px $--Web-Gray1;
+    }
+  }
+  button {
+    padding: .4rem;
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5%;
+    background: $--Web-Yellow;
+    outline: solid 1px $--Web-Yellow;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background: $--Web-Blue;
+      color: $--Web-White;
+      outline: solid 1px $--Web-Blue;
+    }
+  }
+}
