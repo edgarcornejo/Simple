@@ -42,6 +42,7 @@
   width: 100%;
   fieldset {
     display: flex;
+    width: 100%;
     padding: .4rem 1rem 1rem 1rem;
     border: solid 2px $--Web-Yellow;
     background: $--Web-White;
@@ -51,13 +52,14 @@
     font-weight: 500;
   }
   input[type="search"] {
-    width: 100%;
+    width: 50%;
     padding: .4rem;
     outline: solid 1px $--Web-Blue;
     border: none;
-    border-radius: 5%;
+    border-radius: 5% 0 0 5%;
     background: none;
-    &:focus {
+    &:focus-within {
+      flex-grow: 1;
       outline: solid 1px $--Web-Gray1;
     }
   }
@@ -66,7 +68,7 @@
     border: none;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5% 5% 0;
     background: $--Web-Yellow;
     outline: solid 1px $--Web-Yellow;
     transition: all 0.4s ease-in-out;

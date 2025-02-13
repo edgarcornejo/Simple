@@ -146,6 +146,9 @@ body {
   }
   a {
     color: $--Web-Blue;
+    background-color: $--Web-White;
+    display: inline-block;
+    padding: clamp(8px, .5vw, .5vw);
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     &:hover {
@@ -155,11 +158,12 @@ body {
 }
 
 .detalles {
-  margin: 1rem 0 1rem 0;
+  margin: clamp(16px, 1vw, 1vw) 0 clamp(16px, 1vw, 1vw) 0;
   transition: all .4s ease-out;
   background: $--Web-Yellow;
-  border-radius: 5px;
-  height: 50px;
+  border-radius: 5%;
+  min-height: 50px;
+  height: auto;
   transition: all 0.4s ease-in-out;
   interpolate-size: allow-keywords;
   &[open] {
@@ -169,7 +173,7 @@ body {
   summary {
     border-radius: 5%;
     font-weight: 600;
-    padding: 1rem;
+    padding: clamp(16px, 1vw, 1vw);
     cursor: pointer;
   }
   section {
