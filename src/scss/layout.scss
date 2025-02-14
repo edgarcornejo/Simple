@@ -62,6 +62,7 @@ body {
     padding-bottom: 1.5rem;
     text-align: justify;
     hyphens: none;
+    max-width: 80ch;
   }
   .columna-doble {
     columns: 2;
@@ -111,6 +112,7 @@ body {
 /* Code */
 #code {
   background: $--Web-Gray1;
+  border-left: solid 48px $--Web-Black;
   border-radius: 5px;
   padding: 1rem;
   color: $--Web-White;
@@ -118,6 +120,13 @@ body {
   code {
     font-family: 'Courier New', Courier, monospace;
     color: $--Web-Yellow;
+  }
+}
+
+#progress-bar {
+  margin: clamp(16px, 1vw, 1vw) 0 clamp(16px, 1vw, 1vw) 0;
+  progress {
+    width: 100%;
   }
 }
 
