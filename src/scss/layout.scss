@@ -85,6 +85,103 @@ body {
   }
 }
 
+/* Carousel */
+.carousel {
+  margin-bottom: 48px;
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  anchor-name: --carousel;
+  columns: 3;
+  block-size: 200px;
+  text-align: center;
+  &:column {
+    scroll-snap-align: center;
+  }
+
+  li {
+    list-style: none;
+    height: 100%;
+    padding: 1rem;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+  }
+}
+
+.carousel {
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    font-family: "Material Symbols Outlined";
+  }
+
+  &::scroll-button(right) {
+    position-area: inline-end center;
+    content: 'arrow_forward' / 'Next';
+    translate: -48px;
+  }
+  
+  &::scroll-button(left) {
+    position-area: inline-start center;
+    content: 'arrow_back' / 'Previous';
+    translate: 48px;
+  }
+}
+
+.carousel {
+  scroll-marker-group: after;
+
+  &::scroll-marker-group {
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: block-end;
+    margin: 10px;
+
+
+    display: grid;
+    grid-auto-columns: 20px;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+
+  &::column::scroll-marker {
+    font-family: "Material Symbols Outlined";
+    content: 'circle' / 'Circle';
+    text-decoration: none;
+    &:hover {
+      background: $--Web-Blue;
+      border-radius: 100%;
+      color: $--Web-White;
+    }
+
+    &::target-current {
+      background: $--Web-Blue;
+    }
+  }
+}
+
+.carousel {
+  [tabindex] {
+    animation: offscreen-inert linear both;
+    animation-timeline: view(x);
+  }
+}
+
+/*@keyframes offscreen-inert {
+  entry 0%, entry 19%, exit 100% {
+    interactivity: inert;
+    opacity: .25;
+  }
+  entry 20%, exit 99% {
+    interactivity: auto;
+    opacity: 1;
+  }
+}*/
+
 /* Video */
 #video {
   width: 100%;
@@ -149,6 +246,7 @@ body {
     list-style: square;
     font-weight: 600;
     list-style-position: inside;
+    list-style: none;
   }
   ::marker {
     color: $--Web-Black;
